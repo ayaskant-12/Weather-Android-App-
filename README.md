@@ -1,31 +1,30 @@
-#🌤️ Mausam - Weather App
+# 🌤️ Mausam - Weather App
 A beautiful and responsive Flutter weather application that provides real-time weather information for cities worldwide.
 
-##📱 Features
-- Real-time Weather Data: Get current temperature, humidity, wind speed, and weather conditions
+## 📱 Features
+- **Real-time Weather Data**: Get current temperature, humidity, wind speed, and weather conditions
 
-- City Search: Search for weather information in any city worldwide
+- **City Search**: Search for weather information in any city worldwide
 
-- Beautiful UI: Gradient backgrounds and intuitive design
+- **Beautiful UI**: Gradient backgrounds and intuitive design
 
-- Responsive Design: Works seamlessly on different screen sizes
+- **Responsive Design**: Works seamlessly on different screen sizes
 
-- Random City Suggestions: Get inspired with random city suggestions in the search placeholder
+- **Random City Suggestions**: Get inspired with random city suggestions in the search placeholder
 
 ## 🛠️ Technical Stack
-- Framework: Flutter
+- **Framework**: Flutter
 
-- HTTP Client: http package for API calls
+- **HTTP Client**: http package for API calls
 
-- Icons: Weather Icons package
+- **Icons**: Weather Icons package
 
-- Loading Animation: Flutter SpinKit
+- **Loading Animation**: Flutter SpinKit
 
-- API: OpenWeatherMap API
+- **API**: OpenWeatherMap API
 
-##📁 Project Structure
+## 📁 Project Structure
 ```
-text
 lib/
 ├── main.dart                 # App entry point and route configuration
 ├── Activity/
@@ -44,104 +43,105 @@ lib/
 - OpenWeatherMap API key
 
 ### Installation
-- Clone the repository
+1 **Clone the repository**
 ```
 bash
 git clone <your-repo-url>
 cd mausam
 ```
-- Install dependencies
+2 **Install dependencies**
 ```
 bash
 flutter pub get
 ```
-- Add your API key
+3 **Add your API key**
 
--- Get a free API key from OpenWeatherMap
+- Get a free API key from OpenWeatherMap
 
--- Replace the API key in worker.dart:
+- Replace the API key in worker.dart:
 ```
 dart
 var url = Uri.parse("https://api.openweathermap.org/data/2.5/weather?q=$location&appid=YOUR_API_KEY");
 ```
-Run the app
-
+4 **Run the app**
+```
 bash
 flutter run
-📊 App Flow
-Loading Screen: Displays splash animation while fetching initial weather data
+```
+## 📊 App Flow
+1 **Loading Screen**: Displays splash animation while fetching initial weather data
 
-Home Screen: Shows comprehensive weather information including:
+2 **Home Screen**: Shows comprehensive weather information including:
 
-Current temperature in Celsius
+  - Current temperature in Celsius
 
-Weather description and city name
+  - Weather description and city name
 
-Wind speed in km/h
+  - Wind speed in km/h
 
-Humidity percentage
+  - Humidity percentage
 
-Weather condition icons
+  - Weather condition icons
 
-Search Functionality:
+3 **Search Functionality**:
 
-Tap the search icon to fetch weather for any city
+  - Tap the search icon to fetch weather for any city
 
-Random city suggestions in the search placeholder
+  - Random city suggestions in the search placeholder
 
-Input validation for empty searches
+  - Input validation for empty searches
 
-🎨 UI Components
-Gradient Backgrounds: Beautiful blue gradient themes
+## 🎨 UI Components
+- **Gradient Backgrounds**: Beautiful blue gradient themes
 
-Weather Cards: Transparent cards displaying weather metrics
+- **Weather Cards**: Transparent cards displaying weather metrics
 
-Search Bar: Custom search bar with rounded corners
+- **Search Bar**: Custom search bar with rounded corners
 
-Weather Icons: Dynamic icons from OpenWeatherMap
+- **Weather Icons**: Dynamic icons from OpenWeatherMap
 
-Loading Animation: Wave-style loading indicator
+- **Loading Animation**: Wave-style loading indicator
 
-🔧 Configuration
-Routes
-/ - Loading screen (initial route)
+## 🔧 Configuration
+### Routes
+- `/` - Loading screen (initial route)
 
-/home - Main weather display
+- `/home` - Main weather display
 
-/loading - Loading screen with search functionality
+- `/loading` - Loading screen with search functionality
 
-Default Cities
+### Default Cities
 The app includes a predefined list of cities for random suggestions:
 
-Mumbai, Delhi, Chennai, Dhar, Indore, Bhubaneswar, London
+- Mumbai, Delhi, Chennai, Dhar, Indore, Bhubaneswar, London
 
-📸 Screens
-Loading Screen: App logo with wave loading animation
+## 📸 Screens
+1 **Loading Screen**: App logo with wave loading animation
 
-Home Screen:
+2 **Home Screen**:
 
-Search bar at the top
+- Search bar at the top
 
-Weather condition and city
+- Weather condition and city
 
-Temperature display
+- Temperature display
 
-Wind speed and humidity cards
+- Wind speed and humidity cards
 
-Footer credits
+- Footer credits
 
-🛡️ Error Handling
-Network request error handling
+## 🛡️ Error Handling
+- Network request error handling
 
-Invalid city name handling
+- Invalid city name handling
 
-Empty search validation
+- Empty search validation
 
-Default values for missing data
+- Default values for missing data
 
-📝 Dependencies
-Add these to your pubspec.yaml:
-
+## 📝 Dependencies
+- Add these to your pubspec.yaml:
+```
 yaml
 dependencies:
   flutter:
@@ -149,6 +149,8 @@ dependencies:
   http: ^1.1.0
   weather_icons: ^3.0.0
   flutter_spinkit: ^5.1.0
-👨‍💻 Developer
-Ayaskant
+```
+## 👨‍💻 Developer
+**Ayaskant**
 Flutter Developer
+
