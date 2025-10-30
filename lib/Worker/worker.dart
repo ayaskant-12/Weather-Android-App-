@@ -1,4 +1,4 @@
-import 'package:http/http.dart';
+nimport 'package:http/http.dart';
 import 'dart:convert';
 class worker
 {
@@ -23,7 +23,7 @@ class worker
   {
     try
     {
-      var url = Uri.parse("https://api.openweathermap.org/data/2.5/weather?q=$location&appid=8f7c796f71c002f1979691029a2b7e8c");
+      var url = Uri.parse("https://api.openweathermap.org/data/2.5/weather?q=$location&appid=yourapikey");
       Response response = await get(url);
       Map data = jsonDecode(response.body);
 
